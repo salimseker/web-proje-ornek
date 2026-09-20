@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Code Corner</title>
+</head>
+<body>
+
+  <header>
+    <h1>Code Corner</h1>
+    <p>The portfolio of a computer engineering student</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Me</h2>
+    <p>Fill in the form below to send me a message.</p>
+
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Your Information</legend>
+
+        <p>
+          <label for="fullname">Full name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </p>
+
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="date">Preferred contact date:</label>
+          <input type="date" id="date" name="date">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Message</legend>
+
+        <p>
+          <label for="subject">Subject:</label>
+          <select id="subject" name="subject">
+            <option value="question">Question about a project</option>
+            <option value="collaboration">Collaboration idea</option>
+            <option value="feedback">Feedback about the website</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Salim Şeker. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
